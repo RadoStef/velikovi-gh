@@ -1,0 +1,49 @@
+@import 'var.less';
+
+.contacts-wrapper {
+    width: 100%;
+
+    h2 {
+        color: @color-dark-blue;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 1px 1px @color-silver;
+
+    }
+
+    .contacts {
+        width: 100%;
+
+        span {
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin: 60px auto;
+
+            a {
+                color: @color-dark-blue;
+                background-color: @color-light-silver;
+                padding: 20px;
+                font-size: 18px;
+                text-decoration: none;
+                border-radius: 3px;
+
+                &:hover {
+                    color: @color-white;
+                    background-color: @color-dark-blue;
+                    text-decoration: wavy;
+                    transition: all 0.5s;
+                }
+
+            }
+        }
+
+        hr {
+            color: @color-dark-blue;
+            height: 1px;
+            width: 50%;
+        }
+    }
+}

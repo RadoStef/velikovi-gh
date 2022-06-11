@@ -1,0 +1,161 @@
+@import 'var.less';
+
+.mobile-navigation {
+    width: 100%;
+    text-align: center;
+    height: 250px;
+    margin: auto;
+    display: none;
+
+
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+    
+
+    .mobile-link {
+        height: 30px;
+        justify-items: center;
+        background-color: @color-button-blue;
+        font-size: 16px;
+        padding-top: 10px;
+        border-bottom: 2px solid @color-light-blue;
+        opacity: 0.9;
+
+        &:hover {
+            transform: translateY(2px);
+            background-color: @color-light-blue;
+            transition: all 0.6s;
+        }
+
+        
+        a {
+            color: @color-light-silver;
+            text-decoration: none;
+
+            &:hover {
+                color: @color-black;
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+
+.prices {
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    margin-top: 100px;
+
+    .prices-wrapper {
+        width: 90%;
+        height: 310px;
+        background-color: @color-light-silver;
+        display: flex;
+        justify-content: center;
+
+        .mobile-navigation {
+            width: 100%;
+            text-align: center;
+            height: 250px;
+            margin: auto;
+            display: none;
+    
+    
+            @media screen and (min-width: 700) {
+                display: none;
+            }
+            
+    
+            .mobile-link {
+                height: 30px;
+                justify-items: center;
+                background-color: @color-button-blue;
+                font-size: 16px;
+                padding-top: 10px;
+                border-bottom: 2px solid @color-light-blue;
+                opacity: 0.9;
+    
+                &:hover {
+                    transform: translateY(2px);
+                    background-color: @color-light-blue;
+                    transition: all 0.6s;
+                }
+    
+                
+                a {
+                    color: @color-light-silver;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: @color-black;
+                        transition: all 0.6s;
+                    }
+                }
+            }
+        }
+
+        .prices-header {
+            text-align: left;
+            width: 50%;
+
+            @media screen and (max-width: @mobile) {
+                display: none;
+
+            }
+
+            h2 {
+                color: @color-dark-blue;
+                text-shadow: 1px 1px @color-silver;
+                font-size: 25px;
+                font-weight: lighter;
+                padding-left: 10px;
+
+                @media screen and (max-width: @mobile) {
+                    font-size: 15px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                text-align: left;
+                padding-left: 10px;
+                padding-right: 20px;
+
+                @media screen and (max-width: @mobile) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+            @media screen and (max-width: @mobile) {
+                font-size: 15px;
+                width: 100%;
+            }
+            
+        }
+
+        th {
+            width: 60%; 
+            border-bottom: 1px solid @color-light-blue;
+            height: 70px;
+
+            @media screen and (max-width: @mobile) {
+                font-size: 15px;
+            }
+        }
+
+        td {
+            width: 25%; 
+            border-bottom: 1px solid @color-button-blue;
+            height: 50px;
+            text-align: center;
+
+            @media screen and (max-width: @mobile) {
+                font-size: 15px;
+            }
+        }
+    }
+}

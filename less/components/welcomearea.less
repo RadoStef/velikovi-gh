@@ -1,0 +1,118 @@
+@import 'var.less';
+
+h1 {
+    color: @color-dark-blue;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 1px @color-silver;
+    font-family: 'Caveat', cursive;
+
+    @media screen and (max-width: @mobile) {
+        font-size: 40px;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 15px;
+
+    }
+}
+.welcome-section {
+    padding: 40px 0;
+    height: 850px;
+    border-bottom: 1px solid @color-light-blue;
+    background-image: url('http://www.velikovi.eu/24.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // https://vila.bg/blog/wp-content/uploads/2021/03/pomorie-964.jpg
+
+    @media screen and (max-width: @mobile) {
+        font-size: 14px;
+        min-width: 400px;
+    }
+
+    .welcome-wrapper {
+        width: 80%;
+        min-width: 400px;
+        text-align: left;
+        margin: auto;
+    
+        @media screen and (max-width: @mobile) {
+            font-size: 14px;
+            min-width: 400px;
+            
+        }
+
+        .mobile-navigation {
+            width: 100%;
+            text-align: center;
+            height: 250px;
+            margin: auto;
+            display: none;
+    
+    
+            @media screen and (min-width: 700px) {
+                display: none;
+            }
+            
+    
+            .mobile-link {
+                height: 30px;
+                justify-items: center;
+                background-color: @color-button-blue;
+                font-size: 16px;
+                padding-top: 10px;
+                border-bottom: 2px solid @color-light-blue;
+                opacity: 0.9;
+    
+                &:hover {
+                    transform: translateY(2px);
+                    background-color: @color-light-blue;
+                    transition: all 0.6s;
+                }
+    
+                
+                a {
+                    color: @color-light-silver;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: @color-black;
+                        transition: all 0.6s;
+                    }
+                }
+            }
+
+            h1 {
+
+                @media screen and (max-width: @mobile) {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+        color: @color-black;
+        min-width: 480px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.6;
+        background-color: @color-white;
+    
+            @media screen and (max-width: @mobile) {
+                margin-top: 200px;
+                font-size: 14px;
+                min-width: 400px;
+                padding-left: 0;
+                background-color: @color-white;
+                display: none;
+            }
+        }
+    
+    }
+
+    
+}
+

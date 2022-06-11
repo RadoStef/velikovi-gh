@@ -1,0 +1,138 @@
+@import 'var.less';
+
+@media screen and (max-width: @tablet) {
+
+}
+@media screen and (max-width: @mobile) {
+}
+
+.accomodation-wrapper {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        padding: 40px 0;
+        text-transform: uppercase;
+        @media screen and (max-width: @mobile) {
+            font-size: 18px;
+            margin: 0 40px;
+        }
+
+        @media screen and (max-width: @tablet) {
+            font-size: 18px;
+            margin: 0 40px;
+        }
+    }
+
+    .container {
+        width:90%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+
+        @media screen and (max-width: @mobile) {
+            width:100%;
+            margin-left: 0;
+            grid-template-columns: 100%;
+        }
+
+        @media screen and (max-width: @tablet) {
+            width:100%;
+            margin-left: 0;
+            grid-template-columns: 100%;
+        }
+
+        .slider {
+            width: 65%;
+            margin-left: 10%;
+
+            @media screen and (max-width: @mobile) {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            @media screen and (max-width: @tablet) {
+                width: 70%;
+                margin-left: 15%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        .icons {
+            width: 100%;
+            text-align: left;
+            
+
+            @media screen and (max-width: @mobile) {
+                text-align: center;
+                }
+
+            @media screen and (max-width: @tablet) {
+                text-align: center;
+                }
+            i {
+                font-size: 28px;
+                margin: 0 10px;
+                padding: 15px;
+                border: 3px solid @color-button-blue;
+                border-radius: 50%;
+
+                @media screen and (max-width: @mobile) {
+                    padding: 15px;
+                    font-size: 16px;
+                    border: 2px solid @color-button-blue;
+                    }
+
+                &:hover {
+                    color: @color-button-blue;
+                    transition: all 0.5s;
+                    border-radius: 25%;
+                }
+            }
+
+            ul {
+                padding: 0;
+                li {
+                    font-size: 20px;
+                    line-height: 1,7;
+
+                    @media screen and (max-width: @mobile) {
+                        font-size: 16px;
+                    }
+                    
+                }    
+            }
+
+            .go-to-gallery {
+                margin-left: auto;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                padding: 20px;
+                font-size: 22px;
+                border: 1px solid @color-button-blue;
+                border-radius: 10px;
+                cursor: pointer;
+
+                @media screen and (max-width: @mobile) {
+                padding: 15px;
+                font-size: 18px;
+                }
+                &:hover {
+                    background-color: @color-button-blue;
+                    color: @color-white;
+                    transition: all 0.7s;
+                }
+            }
+        }
+
+        .capacity {
+            text-align: center;
+
+            
+        }
+    }
+}
